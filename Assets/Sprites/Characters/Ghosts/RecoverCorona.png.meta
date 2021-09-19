@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: b57a093961ae94a038b901f5fc059a7a
+guid: 3014ef0df14874274bdfb0a0562f9a75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8955212944189305381
-    second: AquaCorona_0
+      213: -5247354773079420231
+    second: RecoverCorona_0
   - first:
-      213: -5099109221222032194
-    second: AquaCorona_1
+      213: -4205325141753081225
+    second: RecoverCorona_1
   - first:
-      213: 3163431211145284013
-    second: AquaCorona_2
+      213: -4718560559052490645
+    second: RecoverCorona_2
+  - first:
+      213: -3291685235553704595
+    second: RecoverCorona_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AquaCorona_0
+      name: RecoverCorona_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 27
-        height: 26
+        x: 7
+        y: 5
+        width: 19
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 522326ad9be474c70800000000000000
-      internalID: 8955212944189305381
+      spriteID: 9b29624b2a6ad27b0800000000000000
+      internalID: -5247354773079420231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AquaCorona_1
+      name: RecoverCorona_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 3
-        width: 23
-        height: 22
+        x: 39
+        y: 5
+        width: 19
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,14 +138,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebc5426fd235c39b0800000000000000
-      internalID: -5099109221222032194
+      spriteID: 772d9c8701fa3a5c0800000000000000
+      internalID: -4205325141753081225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AquaCorona_2
+      name: RecoverCorona_2
       rect:
         serializedVersion: 2
         x: 71
@@ -156,8 +159,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da9c2bb0de3c6eb20800000000000000
-      internalID: 3163431211145284013
+      spriteID: b68f18aeb2e448eb0800000000000000
+      internalID: -4718560559052490645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RecoverCorona_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 5
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d656c66e7b59152d0800000000000000
+      internalID: -3291685235553704595
       vertices: []
       indices: 
       edges: []
@@ -165,7 +189,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5f0578f51ca2649f9b6a761190236176
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
