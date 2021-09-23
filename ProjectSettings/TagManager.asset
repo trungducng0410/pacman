@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pacman
+  - 6
+  - 5
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 7
   layers:
   - Default
   - TransparentFX

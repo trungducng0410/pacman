@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: df618a8d9a16544fd9394b954ef56fe0
+guid: 0a2fce1fc79344aa1910e6825defeea2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3212801859442847008
-    second: Pacman_0
+      213: 7571401643613406209
+    second: PowerUp_0
   - first:
-      213: -6543664708499819273
-    second: Pacman_1
+      213: 1933725852033448605
+    second: PowerUp_1
   - first:
-      213: -5117255910089929328
-    second: Pacman_2
-  - first:
-      213: 2740536928371084324
-    second: Pacman_3
+      213: -7523910368627721671
+    second: PowerUp_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,85 +100,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pacman_0
+      name: PowerUp_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 7
-        width: 16
-        height: 18
+        x: 10
+        y: 0
+        width: 12
+        height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02d2ecdd44a269c20800000000000000
-      internalID: 3212801859442847008
+      spriteID: 104c26b0ea5031960800000000000000
+      internalID: 7571401643613406209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pacman_1
+      name: PowerUp_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 7
-        width: 16
-        height: 18
+        x: 42
+        y: 0
+        width: 13
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f4bb901e9b3035a0800000000000000
-      internalID: -6543664708499819273
+      spriteID: d9a7177ca69f5da10800000000000000
+      internalID: 1933725852033448605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pacman_2
+      name: PowerUp_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 7
-        width: 16
-        height: 18
+        x: 74
+        y: 0
+        width: 13
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d4256bcdadbf8b0800000000000000
-      internalID: -5117255910089929328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pacman_3
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 7
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42c066df0d7580620800000000000000
-      internalID: 2740536928371084324
+      spriteID: 93af0141263b59790800000000000000
+      internalID: -7523910368627721671
       vertices: []
       indices: 
       edges: []
@@ -189,7 +165,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 91b197286eb3c4e85be6a3a28addb45d
+    spriteID: b5bd6caf74e124fe183556022bac49bf
     internalID: 0
     vertices: []
     indices: 

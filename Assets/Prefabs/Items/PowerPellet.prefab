@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4565475721196580417}
   m_Layer: 0
   m_Name: PowerPellet
-  m_TagString: Untagged
+  m_TagString: 6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1344053862893166480, guid: 99fc9c521ba3d460dbb7c0b4ee54665e, type: 3}
+  m_Sprite: {fileID: 7571401643613406209, guid: 0a2fce1fc79344aa1910e6825defeea2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
