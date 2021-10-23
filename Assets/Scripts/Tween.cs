@@ -10,11 +10,12 @@ public class Tween
     public float StartTime { get; private set; }
     public float Duration { get; private set; }
 
-    public Tween(Transform target, Vector3 startPos, Vector3 endPos, float startTime, float duration)
+
+    public Tween(Transform target, Vector3 origin, Vector3 destination, float startTime, float duration)
     {
         Target = target;
-        StartPos = startPos;
-        EndPos = endPos;
+        StartPos = origin;
+        EndPos = destination;
         StartTime = startTime;
         Duration = duration;
     }
