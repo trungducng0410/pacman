@@ -56,4 +56,9 @@ public class Tweener : MonoBehaviour
         }
         return false;
     }
+
+    public void RemoveTween()
+    {
+        activeTweens = new List<Tween>();
+    }
 }
