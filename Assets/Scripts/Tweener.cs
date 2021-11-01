@@ -4,68 +4,61 @@ using UnityEngine;
 
 public class Tweener : MonoBehaviour
 {
-    public Animator pacmanAnimatorController;
+    //private Tween activeTween;
+    private List<Tween> activeTweens;
 
-    [SerializeField]
-    private GameObject player;
-    private Tween activeTween;
-    private Vector3 currentPosition;
-    // Start is called before the first frame update
     void Start()
     {
-
+        activeTweens = new List<Tween>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        AddPlayerTween();
-        if (activeTween != null)
+        //if (activeTween != null)
+        Tween activeTween;
+        for (int i = activeTweens.Count - 1; i >= 0; i--) //Tween activeTween in activeTweens.Reverse<Tween>())
         {
-            // Linear interpolation
-            float timeFraction = (Time.time - activeTween.StartTime) / activeTween.Duration;
+            activeTween = activeTweens[i];
 
-            // Distance between current pos to end
-            float dist = Vector3.Distance(activeTween.Target.position, activeTween.EndPos);
-
-            if (dist > 0.1f)
+            if (Vector3.Distance(activeTween.Target.position, activeTween.EndPos) > 0.1f)
             {
-                activeTween.Target.transform.position = Vector3.Lerp(activeTween.StartPos, activeTween.EndPos, timeFraction);
+                float timeFraction = (Time.time - activeTween.StartTime) / activeTween.Duration;
+                activeTween.Target.position = Vector3.Lerp(activeTween.StartPos,
+                                                          activeTween.EndPos,
+                                                           timeFraction);
             }
             else
             {
                 activeTween.Target.position = activeTween.EndPos;
-                activeTween = null;
+                //activeTween = null;
+                activeTweens.RemoveAt(i);
             }
         }
-
-        currentPosition = player.transform.position;
     }
 
-    public void AddPlayerTween()
+    public bool AddTween(Transform targetObject, Vector3 startPos, Vector3 endPos, float duration)
     {
-        if (activeTween == null)
+        if (!TweenExists(targetObject))
         {
-            if (Mathf.Approximately(currentPosition.x, -2.693f) && Mathf.Approximately(currentPosition.y, 4.18f)) // Move right
-            {
-                pacmanAnimatorController.SetTrigger("goingRight");
-                activeTween = new Tween(player.transform, player.transform.position, new Vector3(-1.1f, 4.18f, 0), Time.time, 1.5f);                
-            }
-            if (Mathf.Approximately(currentPosition.x, -1.1f) && Mathf.Approximately(currentPosition.y, 4.18f)) // Move down
-            {
-                pacmanAnimatorController.SetTrigger("goingDown");
-                activeTween = new Tween(player.transform, player.transform.position, new Vector3(-1.1f, 2.92f, 0), Time.time, 1.5f);
-            }
-            if (Mathf.Approximately(currentPosition.x, -1.1f) && Mathf.Approximately(currentPosition.y, 2.92f)) // Move left
-            {
-                pacmanAnimatorController.SetTrigger("goingLeft");
-                activeTween = new Tween(player.transform, player.transform.position, new Vector3(-2.693f, 2.92f, 0), Time.time, 1.5f);
-            }
-            if (Mathf.Approximately(currentPosition.x, -2.693f) && Mathf.Approximately(currentPosition.y, 2.92f)) // Move up
-            {
-                pacmanAnimatorController.SetTrigger("goingUp");
-                activeTween = new Tween(player.transform, player.transform.position, new Vector3(-2.693f, 4.18f, 0), Time.time, 1.5f);
-            }
+            activeTweens.Add(new Tween(targetObject, startPos, endPos, Time.time, duration));
+            return true;
         }
+        return false;
+    }
+
+
+    public bool TweenExists(Transform target)
+    {
+        foreach (Tween activeTween in activeTweens)
+        {
+            if (activeTween.Target.transform == target)
+                return true;
+        }
+        return false;
+    }
+
+    public void RemoveTween()
+    {
+        activeTweens = new List<Tween>();
     }
 }
