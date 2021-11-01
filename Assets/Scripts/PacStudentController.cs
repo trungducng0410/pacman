@@ -72,6 +72,8 @@ public class PacStudentController : MonoBehaviour
     [SerializeField] List<AudioClip> backgroundClips;
     [SerializeField] AudioSource soundSource;
     [SerializeField] List<AudioClip> soundClips;
+    [SerializeField] AudioSource deathSource;
+    [SerializeField] AudioClip deathClip;
 
     [SerializeField] GameObject teleLeft;
     Vector2Int teleLeftPos;
@@ -391,6 +393,9 @@ public class PacStudentController : MonoBehaviour
 
                         //Update UI
                         uiManager.UpdateLife(lives);
+
+                        //Play death sound
+                        deathSource.PlayOneShot(deathClip);
                     }
 
                     if (ghostState == (int)GhostState.Scared || ghostState == (int)GhostState.Recovery)
